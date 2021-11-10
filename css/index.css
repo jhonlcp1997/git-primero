@@ -1,0 +1,83 @@
+header {
+	background-color: orange;
+	
+}
+
+a {
+	text-decoration: none;
+	color: darkgreen;
+}
+
+article {
+	margin: 0px 50px;
+}
+
+aside {
+	margin: 50px;
+}
+
+.nav_general {
+	display: inline-flex;
+	padding: 5px;
+}
+
+/* img, inicio, cuenta, seleccionar, Con CSS*/
+.header-lines {
+	font-family: Georgia;
+	font-size: 10px;	
+	margin: 10px 10px 0 0;
+}
+
+.nav__li {
+	display: inline-block;
+	padding: 10px;
+	
+}
+.nav__li:hover > a {
+	color: #ccc;
+}
+
+.nav__li i {
+	font-size: 20px;
+}
+
+
+.indes {
+	position: relative;
+	font-size: 20px;
+	margin: 5px;
+}
+
+/* Busqueda, configuracion, salir */
+.header-complement {
+	display: inline-block;
+	margin-left: 350px;
+
+}
+
+.header-lines-img {
+	margin-left: 25px;
+	height: 60px;
+	border-radius: 80%;
+	border: 2px solid black;
+	
+}
+
+.header-find {
+	display: inline;
+	position: relative;
+	top: -25px;
+	width: 200px;
+	height: 30px;
+	border-radius: 20px;
+	opacity: 0.7;
+}
+
+.header-find-c {
+	top: -25px;
+	display: inline-block;
+	position: relative;
+	margin: 0px 10px;
+	font-family: Impact;
+}
+

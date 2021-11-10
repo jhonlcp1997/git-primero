@@ -1,0 +1,75 @@
+
+* {
+	font-family: Georgia;
+	font-weight: 100;
+	font-size: 30px;
+}
+
+a {
+	text-decoration: none;
+	
+}
+
+div {
+	display: block;
+	background-color: yellow;
+	position: absolute;
+}
+
+div div {
+	background-color: yellow;
+	width: 100px;
+	height: 100px;
+}
+.contenedor {
+	background-color: green;
+	position: relative;
+	border: 4px solid red;
+	margin: 50px auto;
+	height: 450px;
+	width: 450px;
+
+}
+.caja1 {
+	top: 0;
+}
+
+.caja2 {
+	right: 0;
+	
+	/*position =*relative,static, absolute, fixed, sticky*/
+	/*display:  block,inline,inline-block;flex,grid; inline-flex,inline-block */
+}
+
+.caja3 {
+	bottom: 0;
+	
+}
+
+.caja4 {
+	bottom: 0;
+	right: 0;
+}
+
+.caja5 {
+	bottom: 0;
+	right: 0;
+	left: 0;
+	top: 0;
+	margin: auto;
+}
+
+
+/*
+h2 {
+	background-color: red;
+	display: inline-block;
+	padding: 100px;
+	margin: 20px 10px;
+	border-radius: 2em;
+	border: 0px solid blue; outline
+	box-shadow: 20px 30px 50px 10px #000;
+	text-shadow: 2px 2px 7px;
+	transform: rotate(0deg);
+}
+*/

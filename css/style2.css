@@ -1,0 +1,84 @@
+* {
+	font-size: 20px;
+	font-family: Georgia;
+	font-weight: 100;
+}
+
+a{
+	margin: 50px;
+	text-decoration: none;
+}
+
+.a1:link{
+	color: red;
+	background: blue;
+	display: inline-block;
+}
+
+.a1:visited{
+	color: violet;
+	background-color: black;
+	display: inline-block;
+}
+
+.caja {
+	height: 200px;
+	width: 200px;
+	background: lightblue;
+	transition: all 1s;
+}
+
+.caja:hover{
+	background: blueviolet;
+	height: 300px;
+	width: 300px;
+
+}
+
+.caja1 {
+	margin: 25px;
+	width: 200px;
+	height: 300px;
+	border: 2px solid red;
+	background-color: pink;
+	cursor: pointer;
+}
+
+
+/*
+form {
+	margin: 100px auto;
+	display: block;
+	background-color: #555;
+	padding: 100px;
+	width: 50%;
+}
+
+input {
+	padding: 6px;
+	width: 100%;
+}
+
+input::selection {
+	color: red;
+	opacity: 0.3;
+}
+
+p::before{
+	content: "Nada por aqui ";
+}
+
+p::after{
+	content: " por alla";
+} */
+
+/*seudo clases
+: hover, link, active, focus, lang;
+
+Object- fit:  f11;
+:Fil, Contain, Cover("se ajusta al contenedor"), None, Scale.Down;
+	Objet.position: lef- right - Top- Button;
+					PF - EM - %- ETC
+curso:  pointer etc etc;
+
+Colores:  name, rgb(0,0,0)"hasta 255";

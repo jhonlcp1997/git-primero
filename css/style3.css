@@ -1,0 +1,48 @@
+* {
+	font-family: Georgia;
+	font-weight: 100;
+}
+
+.nav__responsive-ul {
+	display: none;
+}
+
+.nav {
+	background-color: #b0b;
+}
+
+.nav__li {
+	display: inline-block;
+	padding: 12px;
+	color: #fff;
+}
+
+.nav__li:hover > a {
+	color: #ccc;
+}
+
+.nav__li:hover {
+	color: #bbb;
+}
+
+.nav__li a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav__li i {
+	box-sizing: border-box;
+	text-align: right;
+	margin-right: 5px;
+
+}
+
+@media (max-width: 500px){
+	.nav__ul{
+		display: none;
+	}
+
+	.nav__responsive-ul {
+		display: block;
+	}
+}
