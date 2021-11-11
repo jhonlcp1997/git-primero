@@ -3,34 +3,14 @@
 	font-weight: 100;
 }
 
-.flex-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	height: 100vh;
-	align-content: flex-start;
 
-}
-
-.flex-item {
-	background-color: #248;
-	color: #fff;
-	margin: 5px;
-	height: 100px;
-	min-width: 120px;
-	text-align: center;
-}
-
-.orange {
-	background-color: orange;
-}
-
-.green {
-	background-color: red;
-}
 
 /*
 display:  flex;
 flex -(wrap,direction,flow): flex,column(reverse)
 justify-content:  space - (muchas cosas,evenly);
+
+
+Otros flex:;
+flex-grow:  (numeros), flex-shrink:  (numeros);
  */
