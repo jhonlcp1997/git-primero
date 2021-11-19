@@ -4,53 +4,59 @@
 	<meta charset="utf-8">
 	<title>Informacion</title>
 	<link rel="icon" href="img/5.jpg">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<script src="https://kit.fontawesome.com/62ea397d3a.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
-		<nav>
-			<ul>
-				<li><a href="index.html">Inicio</a></li>
-				<li><a href="informacion.html">Mi cuenta</a></li>
-				<li><a href="agregado.html">Selecionar</a></li>
-			</ul>
+		<nav class="nav_general">
+			<nav class="header-lines">
+				<ul>
+					<li class="nav__li"><i class="fas fa-home"></i><a href="index.html" class="indes">INICIO</a></li>
+					<li class="nav__li"><a href="informacion.html" class="indes">Cuenta</a></li>
+					<li class="nav__li"><a href="agregado.html" class="indes">Selecionar</a></li>
+					<li class="nav__li"><a href="pruebacss.html" class="indes">Con CSS</a></li>
+				</ul>
+			</nav>
 		</nav>
 	</header>
 	<a href="#imagen">ir a la imagen</a>
-<h2>Informacion</h2>
-<a href="index.html">Regresar</a>
-<div>
-	<li>Dentro de un Div</li>
-</div>
-<form method="post">
+	<h2>Informacion</h2>
+	<a href="index.html">Regresar</a>
 	<div>
-		<p>
-			Cuenta: <input type="text" name="cuenta">
-			
-			Contraseña: <input type="password" name="password" required=""> 
-			</br>
-			Campo oculto: <input type="text" name="oculto">
-			<br>
-			Codigo de seguridad: <input type="number" name="number">
-			<br>
-			email: <input type="email" name="email">
-			<br>
-			Color: <input type="color" name="color">
-			<br>
-			Rango: <input type="range" name="range" min="1" max="5">
-			<br>
-			Fecha: <input type="date" name="date">
-			<br>
-			Hora: <input type="time" name="time">
-			<br>
-			<textarea name="" id="" cols="30" rows="10"></textarea>
-			<br>
-			<input type="button" name="button" value="Boton">
-			<br>
-			<input type="submit" name="submit">
-		</p>
+		<li>Dentro de un Div</li>
 	</div>
-</form>
-<img id="imagen" src="img/5.jpg" width="20%" alt="Kaiser" title="Perro">
+	<form method="post">
+		<div class="nav_general">
+			<p>
+				Cuenta: <input type="text" name="cuenta">
+				
+				Contraseña: <input type="password" name="password" required=""> 
+				</br>
+				Campo oculto: <input type="text" name="oculto">
+				<br>
+				Codigo de seguridad: <input type="number" name="number">
+				<br>
+				email: <input type="email" name="email">
+				<br>
+				Color: <input type="color" name="color">
+				<br>
+				Rango: <input type="range" name="range" min="1" max="5">
+				<br>
+				Fecha: <input type="date" name="date">
+				<br>
+				Hora: <input type="time" name="time">
+				<br>
+				<textarea name="" id="" cols="30" rows="10"></textarea>
+				<br>
+				<input type="button" name="button" value="Boton">
+				<br>
+				<input type="submit" name="submit">
+			</p>
+		</div>
+	</form>
+	<img id="imagen" src="img/5.jpg" width="20%" alt="Kaiser" title="Perro">
 <!-- k
 <video src="img/triste.mp4" controls>
 </video>

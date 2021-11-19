@@ -6,6 +6,7 @@ res2 = numero1 & numero2
 
 document.write(res1+" "+res2);
 
+
 /*
 1111111
 variables: var, let, constant(no se puede modificar)
