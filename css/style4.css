@@ -3,9 +3,175 @@
 	font-weight: 100;
 }
 
+body {
+	background: radial-gradient(circle,#fff,#bbb);
+}
 
+.grid-container {
+	background: #444;
+	display: grid;
+	grid-template-rows: 
+	[f-line]
+	150px 
+	[s-line]
+	150px 
+	[t-line]
+	150px
+	[fo-line];
+	grid-template-columns: 
+
+	150px 
+	150px 
+	150px;
+	border: 5px solid #000;
+}
+
+.grid-item {
+	border: 1px solid #000;
+	background: lightgray;
+}
+
+.grid-item:first-child {
+	background-color: red;
+	grid-row: f-line/t-line;
+	grid-column: 1/3;
+}
 
 /*
+ESTO LO TRABAJE CON LAS PARTES DE UNA PAGINA, EN EL HTML NO BORRE NINGUNA LINEA
+
+
+.grid-container {
+	background: #444;
+	margin: 10px;
+	display: grid;
+	grid-template-areas: 
+	"header header header" 
+	"aside main main"
+	"aside main main"
+	"aside main main"
+	"aside main main"
+	"aside main main"
+	"aside main main"
+	"footer footer footer";
+	grid-template-rows: repeat(auto-fill, 1fr);
+	height: 92vh;
+	border: 5px solid #000;
+}
+
+
+ul li {
+	display: inline-block;
+}
+
+.grid-item{
+	padding: 20px;
+}
+
+.grid-footer {
+	background-color: #6f9;
+	grid-area: footer;
+}
+
+.grid-header {
+	background-color: #f96;
+	grid-area: header;
+}
+
+.grid-main {
+	background-color: #96f;
+	grid-area: main;
+}
+
+.grid-aside {
+	background-color: #888;
+	grid-area: aside;
+}
+
+
+ESTO FUE TRABAJADO CON LAS IMAGENES DE PERRITOS, PARA HACER UNA GALERIA
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+	grid-gap: 10px;
+}
+
+img	{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+img:first-child {
+	grid-column: 1/3;
+	grid-row: 1/3;
+}
+
+
+ESTO FUE PRUEBA CON GRID Y CON NUEVOS TERMINOS
+CON UNA CAJA DE 3X3 Y APRENDIENDO LO QUE ESTA ABAJO
+
+.gird-container {
+	display: grid;
+	grid-template-rows: repeat(3, 200px);
+	grid-template-columns: repeat(3, minmax(120px, 1fr));
+	grid-auto-rows: 1fr;
+	grid-auto-columns: 1fr;
+	border: 3px solid #000;
+	background-color: #333;
+	grid-auto-flow: dense;
+	justify-items: center;
+	align-items: center;
+}
+
+.gird-item{
+	border: 1px solid #000;
+	background-color: #aaa;
+	font-size: 30px;
+	padding: 50px;
+}
+
+.gird-item:first-child {
+	background: red;
+	order: 3;
+}
+
+.gird-item:nth-child(3) {
+	background: lightgreen;
+	order: 5;
+}
+
+
+
+
+
+
+
+
+
+EJEMPLO DE LO QUE TRABAJE CON EL BOTON SUBMIT
+.form input[type="submit"] {
+	background-color: #000;
+	border-bottom: none;
+	padding: 12px;
+}
+
+.form input[type="submit"]:hover {
+	background-color: #5f9;
+	border-bottom: none;
+	padding: 12px;
+}
+
+.form input[type="submit"]:focus {
+	background: #094;
+}
+
+.form input[type="submit"]:active {
+	background: linear-gradient(to bottom, #094, #072);
+}
+
+
 display:  flex;
 flex -(wrap,direction,flow): flex,column(reverse)
 justify-content:  space - (muchas cosas,evenly);
@@ -13,4 +179,38 @@ justify-content:  space - (muchas cosas,evenly);
 
 Otros flex:;
 flex-grow:  (numeros), flex-shrink:  (numeros);
+
+
+Trabajamos "Grid"
+------------Grid------
+
+-Grid container, item, cell, tracks(Column y Row),Area, Line(Column Line y Row Line)
+
+-----Propiedades
+grid-template-rows(gird-container)
+grid-template-columns (gird-container)
+
+Unidades "Auto" y fr
+--A grid Container
+grid-rowgap
+grid-column-gap
+grid-gap:  row column ;
+
+El resto de gird column o row para gird-item
+
+El repeat tambien puede tener sus valores
+Repeat (Cantidad, Tamaño)
+en tamaño se ponen  los valores: min-content, max-content, minmax(#,#)
+En cantidad se ponen para acomodar: auto-fill,auto-fit;
+
+Ejemplo de lo que trabaje con grid pero con Child para trabajar por partes
+puede ser nth-child(numero) para los que vienen despues del first
+
+.gird-item:first-child  {
+	background: #900;
+	grid-column: 1/ span 2;
+	grid-row: 1/ span 2;
+}
+
+
  */
