@@ -1,6 +1,119 @@
 
-
 /*
+----------------------
+----------------Capitulo 4--------------
+OBJETO Math - BASICO
+----Metodos---
+sqrt() raiz cuadrada
+cbrt raiz cubica
+max devulve el numero mas grande
+min
+random pseudo aleatorio entre 0 y 1
+round redondea al numero mas cercano
+fround Redondea a 15 decimales
+floor devuelve el valor redondeado que sea mayor o menor igual que y apegado A ABAJO
+trunc() redondea a lo que mejor nos gusta
+
+----Propiedades---
+PI  es el pi
+SQRT1_2 raiz cuadrada de un medio
+SQRT2
+
+E constante de euler
+LN2 logaritmo natural de 2
+LN10 logaritmo natural de 10
+LOG2E logaritmo de 2 
+LOG10E
+
+
+METODOS DE ARRAY
+----Transformadores---
+pop()- Elimina el ultimo elemeento de un array y lo devuelve
+shitf()- elimina el primer elemento de un array y lo devuelve
+push() - agreag un elemento al array al final de la lista
+reverse() - invierte el orden de los elementos de un array
+unshift()- agrega uno o mas elementos al inicio del array, y devuelve la nueva longuitud del array
+sort() - ordena los elementos de un arreglo(array) localmente y lo devuelve el arreglo ordenado
+splice()- cambia el contenido de un array eliminando elementos existentes y/o agregando nueuvos elementos (posicion, los a eliminar, "si es que quiero agregar algo mas")
+
+----Accesores----
+join() - une todos los elementos de una matriz (u objeto similar) en una cadena(con algo que queramos separar) y la devuelve
+slice() - devuelve una parte del array dentro de un nuevo array empezando por inicio hasta fin(fin no incluido) parecido al substring
+metodos ya vistos en cadenas: toString(), indesOf(), lastIndex(), includes()
+
+----De Repeticiones ----
+filter()- Crea un nuevo array con todos los elementos que cumplan la condicion (algo => algo.length (< > = etc) numero)
+forEach - ejecuta la funcion indicada una vez por cada elemento del articulo
+
+let nombre = ["Jhon","Anis","Csssa"];
+
+nombre.filter(numero => document.write(numero + "<br>"));
+-----
+METODOS DE CADENAS
+
+let cadena = "hola, como,estas";
+
+let primeraL = cadena[0];
+let demasL;
+
+for (var i = 0; i< cadena.length; i++) {
+	if (i==0) {
+		demasL = cadena[i].toUpperCase();
+	} else {
+		demasL +=cadena[i];	
+	}
+}
+
+resultado= cadena.split(",");
+
+document.write(resultado[1]);
+document.write(`<br> ${primeraL}`);
+document.write(`<br> ${demasL}`);
+
+
+concat()-junta dos o mas cadenas y retorna una nuueva
+
+startsWith()- si una cadena comienza con los caracteres de otra cadena, devuelve true, sino devuelve false
+endsWith()- si una cadena termina con los caracteres de  otra cadena, devuelve true, sino devuelve false
+includes()- si una cadena puede econtrarse dentro de otra cadena, devuelve true, sino develve false
+indexOf()- devuelve el indice del primercaracter de la cadena, si no existe , devuelve -1
+lastIndexof()- devuelve el ultimo indice del primer caracter de la cadena, si no existe, devuelve -1
+
+padStart()[propuesta de Estandar]- rellena cadena al principio con los caracteres deseados
+padEnd() [propuesta de ECMA]- rellenar cadenaal final con los caracteres deseados
+repeat()-  Devuelve la misma cadena pero repetida la cantidad
+
+split()-divide la cadena como le pidamos
+substring()- Nosretorna un pedazo de  la cadena seleccionada (desde,hasta)
+toLowerCase()- convierte una cadena a miniscula
+toUpperCase()- covierte una cadena a mayusula
+toString()- metodo devuelve una cadena que representa el objeto
+trim()- elimina los espacion en blanco al principio y al final
+trimEnd()- elimina los espacion en blanco al inal de una cadena
+trimStart()- elimina los espacios en blanco al inicio de una cadena
+valueOf()- retorna el valor primitivo de un objeto string
+
+-----------------------
+Porner funciones normales con funciones flechas
+var a= parseInt(prompt("numero a:"));
+var b= parseInt(prompt("numero b:"));
+
+function sumar(){
+	
+	let suma = a+b;
+
+	document.write(`La suma es ${suma}`);
+	document.write("<br>")
+}
+
+var restar = ()=>{
+	let resta = a-b;
+
+	document.write(`La resta es ${resta}`);
+}
+
+sumar();
+restar();
 --------------------
 Bucles
 
