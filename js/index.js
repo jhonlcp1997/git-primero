@@ -1,6 +1,37 @@
 
+console.assert(5<3);
+
+
 /*
 ----------------------
+----------------Capitulo 5--------------
+
+CONSOLA
+--------Fuciones de registro
+assert() aparece un mensaje de error si la afirmacion es falsa
+clear() limpia la consola
+error() muestra un mensaje de error en la consola web
+info()
+log()
+warn()
+dir()
+
+
+---------funiones de conteo
+count() registra el numero de veces que se llama a count()
+countReset() resetea el contador
+
+---------funciones de agrupacion
+group() crea un nuevo grupo en linea en el registro de la consola web
+groupEnd()  remueve un grupo en linea en el registro de la consola web
+groupCollapsed() crea un grupo en linea pero contraido, el ususario debe expandirlo para verlo
+
+---------Funciones de temporizador
+time() inicia un temporizador
+timeEnd() registra el vallor actual de un temporizaado
+timeLog() detiene n temporizador
+
+
 ----------------Capitulo 4--------------
 OBJETO Math - BASICO
 ----Metodos---
