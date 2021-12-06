@@ -13,8 +13,10 @@ clear() limpia la consola
 error() muestra un mensaje de error en la consola web
 info()
 log()
-warn()
-dir()
+	para agregar detalle como color por ejemplo se pone %c "y algo que quieras poner" luego poner cosas basicas de CSS
+table() le metemos [12,12,1,2,etc]
+warn() advertencia
+dir() despliega una lista
 
 
 ---------funiones de conteo
@@ -28,8 +30,8 @@ groupCollapsed() crea un grupo en linea pero contraido, el ususario debe expandi
 
 ---------Funciones de temporizador
 time() inicia un temporizador
-timeEnd() registra el vallor actual de un temporizaado
-timeLog() detiene n temporizador
+timeLog() registra el vallor actual de un temporizaado
+timeEnd() detiene n temporizador
 
 
 ----------------Capitulo 4--------------
