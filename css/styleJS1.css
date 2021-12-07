@@ -7,3 +7,66 @@ body {
 	padding: 5px;
 	background: #444;
 }
+
+input {
+	background-color: #2d2;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: #333;
+	font-family: sans-serif;
+}
+
+.flex-item{
+	flex-grow: 1;
+	margin: 20px;
+	max-width: 300px;
+	border: 2px solid #333;
+	padding: 0 20px;
+}
+
+.flex-item:hover{
+	border-color: #71a154;
+	box-shadow: 0px 0px 30px;
+}
+
+.flex-item:focus{
+	border-color: rgb(87, 137, 245);
+	box-shadow: 0px 0px 30px;
+}
+
+.llave-img{
+	width: 300px;
+	
+}
+
+h2,h3{
+	margin: 0;
+}
+
+h2{
+	color: #f52;
+}
+
+h3{
+	color: #2d2;
+
+}
+
+form{
+	width: 100%;
+	text-align: center;
+	padding: 50px;
+}
+
+input[type="submit"]{
+	background: #317124;
+	color:#fff;
+	border: none;
+	padding: 12px 28px;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
