@@ -1,10 +1,174 @@
 
-console.assert(5<3);
+const div = document.querySelector(".div-3");
 
+
+console.log(div.closest(".div"));
 
 /*
 ----------------------
-----------------Capitulo 5--------------
+*----------------Capitulo 6-------------- DOM
+--------Propiedades de Hermanos-
+nextSibling
+previousSibling
+nextElemetSibling
+previousElementSibling
+
+const contenedor = document.querySelector(".contenedor");
+
+const parrafo = document.createElement("P").innerHTML = "Parafo";
+const h2_nuevo = document.createElement("H2");
+
+
+const h2_antiguo = document.querySelector(".h2");
+
+
+console.log(h2_antiguo.lastNextSibling);
+
+
+-----Propiedades de parents----
+parentElement
+parentNode
+
+----metodos de childs---
+replaceChild(nuevo, antiguo)
+remoceChild()
+hasChildNodes()
+
+const contenedor = document.querySelector(".contenedor");
+
+const parrafo = document.createElement("P").innerHTML = "Parafo";
+const h2_nuevo = document.createElement("H2");
+h2_nuevo.innerHTML = "Titulo";
+
+const h2_antiguo = document.querySelector(".h2");
+
+let respuesta = document.hasChildNodes();
+
+if (respuesta){
+	document.write("El elmento tiene hijos");
+} else {
+	document.write("no tiene, hazle hijos xS");
+}
+-.-.--.--..-
+const contenedor = document.querySelector(".contenedor");
+
+const parrafo = document.createElement("P").innerHTML = "Parafo";
+const h2_nuevo = document.createElement("H2");
+h2_nuevo.innerHTML = "Titulo";
+
+const h2_antiguo = document.querySelector(".h2");
+
+contenedor.removeChild(h2_antiguo);
+
+
+
+
+-------obtencion y modificacion de los Childs.---
+firsChild
+lastChild
+firstElementChild
+lastElementChild
+childNodes
+children
+
+const contenedor = document.querySelector(".contenedor");
+
+const hijoActual = contenedor.firstChild;
+console.log(hijoActual);
+
+------Creacion de elementos----------
+createElement()
+createTextNode() crea un texto dentro del nodo
+appendChild
+createDocumentFragment()
+
+const textDelItem = document.createTextNode("este es un item de la lista");
+
+const fragmento = document.createDocumentFragment();
+
+for (let i = 0; i < 20; i++) {
+	const item = document.createElement("LI");
+	item.innerHTML = "Este es un item de la lista";
+	fragmento.appendChild(item);
+	
+}
+contenedor.appendChild(fragmento);
+console.log(contenedor);
+
+
+-------Obtencion y modificacion de elementos---------
+textContent - devuelve eltexto de cualquiernodod
+!innerText devuele el texto visible de un node element
+!outerText devuelve el texto que de las etiquetas html incluidas las etiquietas
+
+innerHTML - devuelve el contenido html de un elemento
+outerHTML - devuelve el codigo HTML completo del elemento
+
+const titulo = document.querySelector(".titulo");
+
+let valor = titulo.textContent;
+document.write(valor);
+
+------Clases, classList y metodos de classList-----
+add() añade una classe
+remove() remueve una clase
+item() devuelve la clase del indice especificado
+contains() verifica si ese elemeento posee ono, la clase especificada
+replace("esto","por esto") remplaza una clase por otra
+toggle("lo que quieras",true o false opcional) - si no tiene la clase especificada, la agrea, si ya la tiene la elimina
+
+const titulo = document.querySelector(".titulo");
+
+titulo.classList.add("Grande");
+
+
+
+
+-----metodos de seleccion de elementos
+getElementById() selecciona un elememento por ID
+getElementsByTagame() selecciona a todos los elementos se le puede agregar [0]
+querySelector() Se puede seleccionar cuando tiene Class con ".el algo"; por su id con "#el algo", y sin nada revisar Calculadora
+querySelectorAll()
+
+----metodos para definir, obtener y eliminar valores de aributos
+setAttribute() modifca el valor de un atributo
+getAttribute() obtiene el valor de un atributo
+removeAttribute() remueve el valor  de un atributo
+
+const rangoEtario = document.querySelector(".rangoEtario");
+rangoEtario.setAttribute("type","text");
+rangoEtario.getAttribute("type");
+rangoEtario.removeAttibute("type");
+
+--Atributos Globales---Se pueden poner en setAttribute
+contentenditable indica si el elemento puede ser modificable por el usuariob(bool)
+dir indica la direccionalidad del texto
+hidden - indica si el elemento aun no es, o ya no es , relevante
+id- define un identificador unico
+style- contienene devlaraciones del estilo css para ser aplicadas al elemeento
+tabindex - indica si el elemeento puede obtener un autofocus de input
+title- contieneun texto con informacion relacionada al elemento al que pertenece
+
+----Atributos de  los inputs----
+classname =
+value =
+type =
+accept
+form
+minLength =  le agrega un minimo de cosas para responder
+placeholder =
+requerid=
+
+const input = document.querySelector(".input-normal");
+input.placeholder="Holas";
+input.minLength ="4";
+
+-----Atributo Style-----
+const titulo = document.querySelector(".titulo");
+
+titulo.style.color="#32b";
+
+*----------------Capitulo 5--------------
 
 CONSOLA
 --------Fuciones de registro
@@ -34,7 +198,7 @@ timeLog() registra el vallor actual de un temporizaado
 timeEnd() detiene n temporizador
 
 
-----------------Capitulo 4--------------
+*----------------Capitulo 4--------------
 OBJETO Math - BASICO
 ----Metodos---
 sqrt() raiz cuadrada
@@ -59,7 +223,7 @@ LOG2E logaritmo de 2
 LOG10E
 
 
-METODOS DE ARRAY
+*METODOS DE ARRAY
 ----Transformadores---
 pop()- Elimina el ultimo elemeento de un array y lo devuelve
 shitf()- elimina el primer elemento de un array y lo devuelve
