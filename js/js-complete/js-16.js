@@ -1,7 +1,126 @@
 
-//*=================21 Arrow functions===========
+
+
 
 /*
+//*================22 Prototipos==================
+// POO
+// Clases (modelo a seguir)
+// objetos(es una instancia de una clase) [atributos(caracteristicas), metodos(Acciones)]
+
+const animal ={
+    nombre: "Snoopy",
+    sonar(){
+        console.log("hago sonidos");
+    }
+}
+
+console.log(animal);
+
+//!no utilizar las Arrow Function dentro de las clases o funciones
+
+function animals2(nombre,genero){
+    this.nombre=nombre;
+    this.genero=genero;
+}
+//metodos agregados al prototipo de la funcion constuctora
+animals2.prototype.sonido = function(){
+    console.log("Hago sonido");
+}
+animals2.prototype.saludar = function(){
+    console.log(`Hola me llamo ${this.nombre}`);
+}
+
+const sno= new animals2("Snoopy","maho"),
+sna = new animals2("snaap","hembra");
+
+console.log(sno.saludar());
+console.log(sna);
+
+
+
+
+class animals{
+    constructor(nombre,edad){
+        this.nombre=nombre;
+        this.edad=edad;
+    }
+    ladro(){
+        console.log(`mi onomatopeya ${this.nombre}`);
+    }
+    vejez(){
+        console.log(`yo ${this.nombre} y tengo ${this.edad}`)
+    }
+}
+
+let perro = new animals("guar"),
+gato = new animals("miau",11);
+
+perro.ladro();
+gato.vejez();
+
+
+//*=================21 Arrow functions===========
+
+//Es una nueva forma de definir funciones anonimas expresadas
+const saludar = function(){
+    console.log("Hola");
+}
+
+const saludar2 =()=>{
+    console.log("Hola2");
+}
+
+const saludar3 =(nombre,edad)=> console.log(`Hola ${nombre} se que tu edad es ${edad}`);
+
+const saludar4 = nombre => console.log(`Hola ${nombre} no se cual es tu edad`);
+
+const sumar = (a,b,...c)=>{
+    let resultado= a+b;
+
+    c.forEach(function(n){
+        resultado += n;
+    });
+
+    return console.log(resultado);
+}
+
+saludar();
+saludar2();
+saludar3("Jhon",24);
+saludar4("Xion");
+sumar(3,4,6,5);
+
+//-----
+const numeros = [1,2,3,4,5,6];
+const numeros2 = numeros;
+
+numeros.forEach(function(el,index){
+    console.log(`El elemento ${el} esta enla posicion ${index}`);
+})
+
+numeros2.forEach((el,index)=>{console.log(`${el} esta en la posicion ${index}`)});
+
+//----
+function perro (){
+    console.log(this);
+}
+
+const perro2 ={
+    nombre:"Ken",
+    ladrar(){
+        console.log(this);
+    }
+}
+
+
+perro();
+perro2.ladrar();
+
+//! una ARROW FUNCTION o FUNCION FLECHA  reconoce el CONTEXTO no el objeto
+
+
+
 //*=================20 parametros REST & Operador Spread============
 
 //! El parametro REST es tres puntos suspensivos ...
