@@ -1,6 +1,47 @@
 
+//*==============23 Herencia Prototipica==============
 
+function animals2(nombre,genero){
+    this.nombre=nombre;
+    this.genero=genero;
+}
 
+animals2.prototype.sonido = function(){
+    console.log("Hago sonido");
+}
+animals2.prototype.saludar = function(){
+    console.log(`Hola me llamo ${this.nombre}`);
+}
+
+function Perro(nombre,genero,tamano){
+    this.super= animals2;
+    this.super(nombre, genero);
+    this.tamano=tamano;
+}
+
+//perro esta heredando de animals2
+Perro.prototype = new animals2();
+Perro.prototype.constructor = Perro;
+
+Perro.prototype.sonido = function(){
+    console.log("Soy un perro y mi sonido es un ladrido");
+}
+
+Perro.prototype.ladrar = function(){
+    console.log("Guau Guau");
+}
+
+const sno= new Perro("Snoopy","macho","Mediano"),
+sna = new animals2("snaap","hembra");
+
+console.log(sno);
+console.log(sna);
+
+sno.sonido();
+sno.ladrar();
+
+sna.sonido();
+sna.saludar();
 
 /*
 //*================22 Prototipos==================
