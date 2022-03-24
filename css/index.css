@@ -1,6 +1,11 @@
 header {
 	background-color: orange;
+	position: fixed;
+	width: 100%;
+	top: 0;
 }
+
+
 
 a {
 	text-decoration: none;
@@ -8,6 +13,7 @@ a {
 }
 
 article {
+	padding-top: 5rem;
 	margin: 0px 50px;
 }
 
@@ -16,12 +22,17 @@ aside {
 }
 
 .nav_general {
+	/* position: relative; */
 	display: flex;
 	padding: 5px;
+	justify-content: space-between;
+	/* align-content: center; */
+	/* align-items: center; */
 }
 
 /* img, inicio, cuenta, seleccionar, Con CSS*/
 .header-lines {
+	
 	font-family: Georgia;
 	font-size: 10px;	
 	margin: 10px 10px 0 0;
@@ -50,9 +61,7 @@ aside {
 
 
 /* Busqueda, configuracion, salir */
-.header-complement {
-	margin-left: 30%;
-}
+
 
 
 
@@ -94,4 +103,24 @@ aside {
 
 .header-find-c i:hover{
 	color: #ccc;
+}
+
+footer{
+	padding: 2.5rem;
+}
+
+
+/* media */
+@media (max-width: 1000px){
+	
+	
+
+	.nav__li{
+		display: none;
+	}
+
+	.header-find {
+		display: none;
+		
+	}
 }
