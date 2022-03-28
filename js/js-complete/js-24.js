@@ -2,11 +2,9 @@
 //*========== 33 Modulos =================
 import { PI,usuario,sumar,aritmetica as arit} from "./exportar.js";
 
-
 console.log(PI,usuario);
 console.log(sumar(3,8));
 console.log(arit.restar(4,2));
-
 
 /*
 //*=========== 32 Funciones anónimas autoejecutadas==========
