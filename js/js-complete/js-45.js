@@ -1,3 +1,177 @@
+// *========== curso 54: generators =========
+function* iterable(){
+    yield "Hola";
+    console.log("Hola consola");
+    yield "Hola2";
+}
+
+let iterador = iterable();
+// console.log(iterador.next());
+// console.log(iterador.next());
+
+for(let y of iterador){
+    console.log(y);
+}
+
+const arr =[...iterable()];
+console.log(arr);
+
+function cuadrado(valor){
+    setTimeout(() => {
+       return console.log({valor, resultado: valor*valor}) 
+    }, Math.random() *1000);
+}
+
+function* generador() {
+    console.log("Inicia Generator");
+    yield cuadrado(0);
+    yield cuadrado(1);
+    yield cuadrado(2);
+    yield cuadrado(3);
+    yield cuadrado(4);
+    yield cuadrado(5);
+    console.log("Termina Generator");
+}
+
+let gen = generador();
+
+for (let y of gen){
+    console.log(y);
+}
+
+/*
+// * ============== curso 53: Iterables & Iterators ======
+const iterable = [1,2,3,4,5];
+const iterador = iterable[Symbol.iterator]();
+
+console.log(iterable);
+console.log(iterador);
+// console.log(iterador.next());
+// console.log(iterador.next());
+// console.log(iterador.next());
+// console.log(iterador.next());
+// console.log(iterador.next());
+// console.log(iterador.next());
+
+let next = iterador.next();
+
+while(!next.done){
+   console.log(next.value) ;
+   next = iterador.next();
+}
+*/
+// * =============== curso 52: WeakSet & WeakMap======
+
+// WEAKSET
+// const ws = new WeakSet();
+// let valor1= {"valor1":1};
+// let valor2= {"valor2":2};
+// let valor3= {"valor3":3};
+
+// ws.add(valor1);
+// ws.add(valor2);
+
+// console.log(ws);
+
+// ws.delete(valor2);
+
+// console.log(ws.has(valor1));
+
+// // setInterval(() => console.log(ws), 1000);
+
+// setTimeout(()=>{
+//     valor1=null;
+//     valor2=null;
+//     valor3=null;
+// }, 5000);
+
+// WEAKMAP
+// const wm = new WeakMap();
+// let llave1 = {};
+// let llave2 = {};
+// let llave3 = {};
+
+// wm.set(llave1, 1);
+// wm.set(llave2, 2);
+// console.log(wm);
+
+// console.log(wm.has(llave1));
+// console.log(wm.has(llave3));
+
+// console.log(wm.get(llave1));
+// console.log(wm.get(llave2));
+// console.log(wm.get(llave3));
+
+// wm.delete(llave2);
+// console.log(wm);
+
+// wm.set(llave2,2);
+// wm.set(llave3,3);
+// console.log(wm);
+
+// setInterval(() => console.log(wm), 1000);
+
+// setTimeout(()=>{
+//     llave1=null;
+//     llave2=null;
+//     llave3=null;
+// }, 5000);
+/* 
+// *========== curso 51: Map =======
+let mapa = new Map()
+mapa.set("Nombre", "Jhon");
+mapa.set("Conocimientos", "nada");
+mapa.set("Cosas", "Nada");
+
+console.log(mapa);
+console.log(mapa.size);
+console.log(mapa.get("Cosas"));
+console.log(mapa.has("Cosas"));
+mapa.set("Otros", 0);
+console.log(mapa);
+mapa.delete("Otros");
+console.log(mapa);
+
+
+for(let [key, value] of mapa){
+    console.log(`Lo que viene primero es ${key} : ${value}`);
+}
+
+const llavesMapas2 = [...mapa.keys()];
+const valoresMapa2 = [...mapa.values()];
+
+console.log(llavesMapas2);
+console.log(valoresMapa2);
+
+
+// *=========== curso 50: sets=======0
+arr=[1,2,3,4,4,5,5]
+console.log(arr);
+arr2 = new Set(arr);
+console.log(new Set(arr));
+arr2.add("Hola")
+// console.log(arr[2].delete);
+console.log(arr2.size);
+console.log("Recorriendo los for: ");
+
+for(item of arr2){
+    console.log(item);
+}
+
+console.log("Recorriendo los for: ");
+arr2.forEach(item => console.log(item));
+
+let arr3 = Array.from(arr2); /* *Esto lo convierte en arreglo al set
+console.log(arr3[2]);
+
+arr2.delete("Hola");
+console.log(arr2);
+
+console.log(arr2.has(2)); /*Esto es para verificar que el dato se encuentra, si es si es true
+
+arr2.clear();
+console.log(arr2);
+
 // * ======= CURSO 48: ASYNC-wAIT=========
 function cuadradoPromise(value){
     if(typeof value !== "number"){
@@ -51,7 +225,7 @@ const functionAsyncronaExpresada = async() =>{
 }
 
 functionAsyncronaExpresada();
-/* 
+
 // ======== CURSO 46-47: Promesas ================
 function cuadradoPromise(value){
     return new Promise((resolve, reject)=>{
