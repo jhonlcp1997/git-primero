@@ -10,6 +10,55 @@
     <h2>IMM</h2>
     <br>
     <br>
+    <!-- <p>One</p>
+    <p>Two</p>
+    <p>Three</p>
+
+    <script>
+        let paragraphs = document.body.getElementsByTagName("p");
+        document.body.insertBefore(paragraphs[2], paragraphs[0]);
+    </script> -->
+
+    <!-- <p>The <img src="../img/llave.png" alt="keys"> in the <img src="../img/4.jpg" alt="dog">.</p>
+    <p><button onclick="replaceImages()">Replace</button></p>
+
+    <script>
+        function replaceImages(){
+            let images = document.body.getElementsByTagName("img");
+            for (let i = images.length - 1; i >= 0; i--) {
+                let image = images[i];
+                console.log(image);
+                if(image.alt){
+                    let text = document.createTextNode(image.alt);
+                    console.log(text);
+                    image.parentNode.replaceChild(text, image);
+                }
+            }
+        }
+    </script> -->
+
+    <!-- <blockquote id="quote">
+        No book can ever be finished. whiel working on it we learn 
+        just enough to find it immature the moment we turn away fron it 
+    </blockquote>
+    <script>
+        function elt(type, ...children){
+            let node = document.createElement(type);
+            for(let child of children){
+                if(typeof child != "string") node.appendChild(child);
+                else node.appendChild(document.createTextNode(child));
+            }
+            return node;
+        }
+
+        document.getElementById("quote").appendChild(
+            elt("footer", "--",
+                elt("strong", "Karl Popper"),
+                ", preface to the second edition of ",
+                elt("em", "The Open Society ad Its Enemies"),
+                ", 1950"));
+    </script> -->
+
     <script src="../js/js-complete/js-45.js"></script>
 </body>
 </html>

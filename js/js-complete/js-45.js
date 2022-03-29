@@ -1,3 +1,37 @@
+
+// *====== curso 55: Proxies======
+const persona = {
+    nombre:"",
+    apellido: "",
+    edad: 0
+}
+
+const manejador ={
+    set (obj, prop,valor){
+        if(Object.keys(obj).indexOf(prop) === -1){
+            return console.error(`La propiedad ${prop} no existe en el objeto persona.`);
+        }
+        if(
+            (prop ==="nombre" || prop === "apellido") &&
+            !(/^[A-Za-zÑñÁáÉéÍíÓóÚú\s]+$/g.test(valor))
+        ){
+            return console.error(`La propiedad ${prop} solo acepta  solo acepta letras y espacios en blanco`);
+        }
+        obj[prop] = valor;
+    }
+}
+
+const jhon = new Proxy(persona, manejador);
+jhon.nombre = "jhon19";
+jhon.apellido = "Cruz";
+jhon.edad= 90;
+jhon.twitter = "@jhon";
+
+console.log(jhon);
+
+console.log(persona);
+
+/*
 // *========== curso 54: generators =========
 function* iterable(){
     yield "Hola";
@@ -39,7 +73,7 @@ for (let y of gen){
     console.log(y);
 }
 
-/*
+
 // * ============== curso 53: Iterables & Iterators ======
 const iterable = [1,2,3,4,5];
 const iterador = iterable[Symbol.iterator]();
