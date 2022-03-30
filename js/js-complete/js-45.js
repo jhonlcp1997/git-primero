@@ -1,4 +1,107 @@
 
+// *=========== curso 58: call, apply, bind ===========
+console.log(this);
+this.lugar = "Hola Global" ;
+
+function saludar(saludo, aQuien){
+    console.log(`${saludo} ${aQuien} desde ${this.lugar}`);
+}
+
+saludar();
+
+
+const obj = {
+    lugar:"Hola 2"
+}
+
+saludar.call(obj, "Hola", "Csi");
+saludar.call(null, "Hola", "Csi");
+saludar.apply(obj, ["Vete", "jojos"]);
+
+const persona ={
+    nombre: "jon",
+    saludar: function(){
+        console.log(`Hola ${this.nombre}`)
+    }
+}
+
+persona.saludar();
+
+const otraPersona = {
+    saludar: persona.saludar.bind(persona)
+}
+
+otraPersona.saludar();
+/*
+// *============ curso 57: this ==============
+console.log(this);
+
+this.nombre= "contexto global";
+
+console.log(this.nombre);
+
+function imprimir (){
+    console.log(this.nombre);
+}
+
+imprimir();
+
+const obj={
+    nombre:"contexto objeto",
+    imprimir: function (){
+        console.log(this.nombre);
+    }
+}
+
+obj.imprimir()
+
+const obj2 ={
+    nombre: "Contexto Objeto 2",
+    imprimir
+}
+
+obj2.imprimir();
+
+const obj3 ={
+    nombre:"Objeto 3",
+    imprimir: ()=>{
+        console.log(this.nombre);
+    }
+}
+
+obj3.imprimir();
+
+function Persona (nombre){
+    const that = this;
+    // this.nombre = nombre;
+    that.nombre = nombre;
+    // return console.log(this.nombre);
+    // return ()=>console.log(this.nombre);
+
+
+    return function(){
+        console.log(that.nombre);
+    }
+}
+
+let jno = new Persona("jhon");
+jno();
+
+// * ============ curso 56: Porpiedades dinámicas de los objetos =====
+
+// let aleatorio = Math.round(Math.random()*100 + 5);
+
+// const objUsuarios = {
+//     propiedad: "Valor",
+//     [`id_${aleatorio}`]:"Valor Aleatorio"
+// };
+// console.log(objUsuarios);
+
+// const usuarios = ["Jhon", "Irma", "Miguel", "Nada"];
+// usuarios.forEach((usuario, index) => objUsuarios[`Id_${index}`] = usuario);
+
+// console.log(objUsuarios);
+
 // *====== curso 55: Proxies======
 const persona = {
     nombre:"",
@@ -31,7 +134,7 @@ console.log(jhon);
 
 console.log(persona);
 
-/*
+
 // *========== curso 54: generators =========
 function* iterable(){
     yield "Hola";
