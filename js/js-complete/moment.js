@@ -1,11 +1,44 @@
 
-// *=========== DOM 66: Texto y HTML ===============
+// *=========== DOM 67: DOM trabersing: Recorriendo el DOM================
 
+const $card = document.querySelector(".cards");
+
+console.log($card);
+console.log($card.children);
+console.log($card.childNodes);
+console.log($card.parentNode);
+console.log($card.firstElementChild);
+console.log($card.lastElementChild);
+console.log($card.previousSibling);
+console.log($card.nextSibling);
+console.log($card.closest("div"));
+console.log($card.closest("body"));
+console.log($card.children[3].closest("section"));
+
+
+/*
+// *=========== DOM 66: Texto y HTML ===============
+const $whatlsDOM = document.getElementById("que-es");
+
+let text = `
+    <p>
+    El Modelo de objeto del Documento(<b><i>DOM-Document Object Model</i></b>) es una API para documentos HTML y XML.
+    </p>
+    <p>
+    Este proveé una representacion estructural del documento, permitiendo modificar su contenido y presentación visual mediante código JS.
+    </p>
+    <p>
+    <mark>El DOM no es parte de la especifiacion de Javascript, es una API para los navegadores</mark>
+    </p>
+`;
+
+$whatlsDOM.textContent = text;
+$whatlsDOM.innerHTML = text;
+$whatlsDOM.outerHTML = text;
 
 
 
 // *=========== DOM 65: Clases CSS ==================
-/*
 // Esto es clases que no lo pude hacer en css :V
 const $cards = document.querySelector(".cards");
 const $img = document.querySelector(".img");
