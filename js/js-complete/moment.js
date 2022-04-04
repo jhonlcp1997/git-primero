@@ -1,5 +1,11 @@
 
+// *=========== DOM 66: Texto y HTML ===============
 
+
+
+
+// *=========== DOM 65: Clases CSS ==================
+/*
 // Esto es clases que no lo pude hacer en css :V
 const $cards = document.querySelector(".cards");
 const $img = document.querySelector(".img");
@@ -11,7 +17,6 @@ console.log($cards.classList.contains("rotate-45"));
 $cards.classList.add("rotate-45");
 console.log($cards.classList.contains("rotate-45"));
 
-/*
 // *========== DOM 64:estilos y variables css=============
 const $linkDOM = document.querySelector(".link-dom");
 
