@@ -1,18 +1,35 @@
 
+// *============= DOM 69: Templates HTML ================
+
+
+/*
 // *========== DOM 68: Creando Elementos y Fragmentos ========
 const $figure = document.createElement("figure"),
     $img = document.createElement("img"),
     $figcaption = document.createElement("figcaption"),
     $figcaptionText = document.createTextNode("Animals"),
-    $cards = document.querySelector(".cards");
+    $cards = document.querySelector(".cards"),
+    $figure2 = document.createElement("figure");
 
+$img.setAttribute("src", "https://placeimg.com/200/200/animals");
+$img.setAttribute("alt", "Animals");
+$figure.classList.add("card");
+
+$figcaption.appendChild($figcaptionText);
+$figure.appendChild($img);
+$figure.appendChild($figcaption);
 $cards.appendChild($figure);
-// $cards.innerHTML = $figcaption;
-$cards.insertAdjacentHTML('afterEnd', `<p>Costitas</p>`);
+
+$figure2.innerHTML = `
+<img src="https://placeimg.com/200/200/people" alt="people">
+<figcaption>People</figcaption>
+`
+
+$figure2.classList.add("card");
+$cards.appendChild($figure2);
 
 console.log(document.body)
 
-/*
 // *=========== DOM 67: DOM trabersing: Recorriendo el DOM================
 const $card = document.querySelector(".cards");
 
