@@ -7,6 +7,11 @@ const $figure = document.createElement("figure"),
     $cards = document.querySelector(".cards");
 
 $cards.appendChild($figure);
+// $cards.innerHTML = $figcaption;
+$cards.insertAdjacentHTML('afterEnd', `<p>Costitas</p>`);
+
+console.log(document.body)
+
 /*
 // *=========== DOM 67: DOM trabersing: Recorriendo el DOM================
 const $card = document.querySelector(".cards");
