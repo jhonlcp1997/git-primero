@@ -1,5 +1,55 @@
 
+
+
+
+
 /*
+// *======= DOM 72: Manejadores de eventos ========
+
+function holaMundo () {
+    alert("Hola Mundo");
+    console.log(Event);
+}
+
+const $eventoSemantico = document.getElementById("eventoSemantico"),
+$eventoMultiple = document.getElementById("evento-multiple");
+
+$eventoSemantico.onclick = holaMundo;
+
+
+$eventoSemantico.onclick = holaMundo;
+$eventoSemantico.onclick = function(){
+    alert("Me ejecuto por evento semantico");
+}
+
+$eventoMultiple.addEventListener('click', (e) =>{
+    alert("Holass")
+    console.log(e);
+    console.log(e.type);
+    console.log(e.target);
+    console.log(event);
+})
+// *===== DOM 71: mODIFICANDO eLEMENTOS (COOL Style)======
+
+const $cards = document.querySelector(".cards"),
+$newCard = document.createElement("figure");
+
+let $contentCard=`
+<img src="https:/placeimg.com/200/200/any" alt="any">
+<figcaption></figcaption>
+`;
+
+$newCard.classList.add("card");
+
+$newCard.insertAdjacentHTML("beforeend",$contentCard);
+$newCard.querySelector("figcaption").insertAdjacentText("afterbegin","Any");
+// $cards.insertAdjacentElement("afterbegin", $newCard);
+
+// $cards.prepend($newCard);
+// $cards.append($newCard);
+// $cards.before($newCard);
+$cards.after($newCard);
+
 // *====== DOM 70: Modificando Elementos (Old Style)=====
 const $cards = document.querySelector(".cards"),
 $newCard = document.createElement("figure"),
