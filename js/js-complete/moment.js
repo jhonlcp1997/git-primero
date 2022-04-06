@@ -1,6 +1,14 @@
 
-// *=========== DOM 67: DOM trabersing: Recorriendo el DOM================
+// *========== DOM 68: Creando Elementos y Fragmentos ========
+const $figure = document.createElement("figure"),
+    $img = document.createElement("img"),
+    $figcaption = document.createElement("figcaption"),
+    $figcaptionText = document.createTextNode("Animals"),
+    $cards = document.querySelector(".cards");
 
+$cards.appendChild($figure);
+/*
+// *=========== DOM 67: DOM trabersing: Recorriendo el DOM================
 const $card = document.querySelector(".cards");
 
 console.log($card);
@@ -16,7 +24,6 @@ console.log($card.closest("body"));
 console.log($card.children[3].closest("section"));
 
 
-/*
 // *=========== DOM 66: Texto y HTML ===============
 const $whatlsDOM = document.getElementById("que-es");
 
