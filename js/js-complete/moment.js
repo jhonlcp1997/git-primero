@@ -1,7 +1,43 @@
 
+// *======= DOM 73: Eventos con Parámetros y Remover Eventos ====
+function holaMundo () {
+    alert("Hola Mundo");
+    console.log(Event);
+}
+
+function saludar (nombre="Desconocid@"){
+    alert(`Hola ${nombre}`);
+    console.log(event);
+}
+
+const $eventoSemantico = document.getElementById("eventoSemantico"),
+$eventoMultiple = document.getElementById("evento-multiple"),
+$removedorEvento = document.getElementById("removedor-event");
+
+$eventoSemantico.onclick = holaMundo;
 
 
+$eventoSemantico.onclick = holaMundo;
+$eventoSemantico.onclick = function(){
+    alert("Me ejecuto por evento semantico");
+}
 
+$eventoMultiple.addEventListener('click', (e) =>{
+    alert("Holass")
+    console.log(e);
+    console.log(e.type);
+    console.log(e.target);
+    console.log(event);
+})
+
+$eventoMultiple.addEventListener("click", () =>{
+    saludar();
+    saludar("JHN");
+})
+
+$removedorEvento.addEventListener("dblclick",(e) =>{
+    alert(`Removiendo el evento tipo : ${e.type}`);
+})
 
 /*
 // *======= DOM 72: Manejadores de eventos ========
