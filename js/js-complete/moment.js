@@ -1,4 +1,23 @@
 
+/*
+// *====== DOM 70: Modificando Elementos (Old Style)=====
+const $cards = document.querySelector(".cards"),
+$newCard = document.createElement("figure"),
+$cloneCards = $cards.cloneNode(true);
+
+$newCard.innerHTML=`
+<img src="https:/placeimg.com/200/200/any" alt="any">
+<figcaption>Any</figcaption>
+`;
+
+$newCard.classList.add("card");
+
+// $cards.insertBefore($newCard, $cards.firstElementChild);
+// $cards.removeChild($cards.lastElementChild);
+
+document.body.appendChild($cloneCards);
+
+
 // *============= DOM 69: Templates HTML ================
 const $cards = document.querySelector(".cards"),
     $template = document.getElementById("template_card").content,
@@ -37,7 +56,6 @@ cardContent.forEach(el =>{
 
 $cards.appendChild($fragment);
 
-/*
 // *========== DOM 68: Creando Elementos y Fragmentos ========
 const $figure = document.createElement("figure"),
     $img = document.createElement("img"),
