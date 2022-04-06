@@ -1,3 +1,8 @@
+
+// *======== 68 DOM: Creando Elementos y Fragmentos=========
+
+
+
 // *======== 63: DOM: Atributos y Data-Atributes ==========
 console.log(document.documentElement.lang)
 console.log(document.documentElement.getAttribute("lang"));
