@@ -1,6 +1,41 @@
 
 // *============= DOM 69: Templates HTML ================
+const $cards = document.querySelector(".cards"),
+    $template = document.getElementById("template_card").content,
+    $fragment = document.createDocumentFragment(),
+    cardContent = [
+        {
+            title: "Tecnología",
+            img: "https://placeimg.com/200/200/tech",
+        },
+        {
+            title: "Animales",
+            img: "https://placeimg.com/200/200/animals",
+        },
+        {
+            title: "Arquitectura",
+            img: "https://placeimg.com/200/200/arch",
+        },
+        {
+            title: "Gentita",
+            img: "https://placeimg.com/200/200/people",
+        },
+        {
+            title: "Naturalesa",
+            img: "https://placeimg.com/200/200/nature",
+        }
+    ];
 
+cardContent.forEach(el =>{
+    $template.querySelector("img").setAttribute("src", el.img);
+    $template.querySelector("img").setAttribute("alt", el.title);
+    $template.querySelector("figcaption").textContent = el.title;
+
+    let $clone = document.importNode($template, true);
+    $fragment.appendChild($clone);
+})
+
+$cards.appendChild($fragment);
 
 /*
 // *========== DOM 68: Creando Elementos y Fragmentos ========
