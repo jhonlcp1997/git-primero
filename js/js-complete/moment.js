@@ -15,9 +15,8 @@ document.addEventListener("click", (e)=>{
     }
 
     if(e.target.matches(".eventos-flujo a")){
-        alert("Aqio se ejecuto el IF");
+        alert("Aqui se ejecuto el IF");
         e.preventDefault();
-
     }
 });
 
