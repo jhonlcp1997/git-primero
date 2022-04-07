@@ -1,6 +1,23 @@
 
 
+
 /*
+// *========DOM 74: Flujo de Eventos (burbuja y Captura)=======
+const $divEventos = document.querySelectorAll(".eventos-flujo div");
+
+function flujoEventos(e){
+    console.log(`Hola te saluda ${this.className}, el click lo origino ${e.target.className}`);
+}
+
+console.log($divEventos);
+
+$divEventos.forEach(div =>{
+    div.addEventListener("click",flujoEventos, {
+        capture: false,
+        once:true
+    });
+})
+
 // *======= DOM 73: Eventos con Parámetros y Remover Eventos ====
 function holaMundo () {
     alert("Hola Mundo");

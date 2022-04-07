@@ -10,6 +10,24 @@
             --color1: #f14ef9;
             --dark-color: #374fc7;
         }
+
+        .eventos-flujo div{
+            padding: 4rem;
+            font-size: 2rem;
+            text-align:center;
+        }
+
+        .uno{
+            background-color: yellow;
+        }
+
+        .dos{
+            background-color: gold;
+        }
+
+        .tres{
+            background-color: lightyellow;
+        }
     </style>
 </head>
 <body>
@@ -58,6 +76,18 @@
     <br><br>
     <button id="removedor-event">Removedor de Eventos</button>
     <br><br><br><br><br><br>
+    <h4>Flujo de Eventos</h4>
+    <section class="eventos-flujo">
+        <div class="uno">
+            1
+            <div class="dos">
+                2
+                <div class="tres">
+                    3
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="../js/js-complete/moment.js"></script>
 </body>
