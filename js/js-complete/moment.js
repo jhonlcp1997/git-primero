@@ -1,5 +1,25 @@
 
+// *======= DOM 76: Delegación de Eventos  =============
 
+function flujoEventos(e){
+    console.log(
+        `Hola te saluda ${this}, el click lo originó ${e.target.className}`
+    )
+}
+
+document.addEventListener("click", (e)=>{
+    console.log("Se hizo click en ", e.target);
+
+    if(e.target.matches(".eventos-flujo div")){
+        flujoEventos(e);
+    }
+
+    if(e.target.matches(".eventos-flujo a")){
+        alert("Aqio se ejecuto el IF");
+        e.preventDefault();
+
+    }
+});
 
 /*
 // *======= DOM 75: STOP propagation & preventDefault=======
