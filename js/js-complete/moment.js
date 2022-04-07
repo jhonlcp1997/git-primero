@@ -1,4 +1,6 @@
 
+
+/*
 // *======= DOM 73: Eventos con Parámetros y Remover Eventos ====
 function holaMundo () {
     alert("Hola Mundo");
@@ -35,11 +37,17 @@ $eventoMultiple.addEventListener("click", () =>{
     saludar("JHN");
 })
 
-$removedorEvento.addEventListener("dblclick",(e) =>{
-    alert(`Removiendo el evento tipo : ${e.type}`);
-})
+const removerDobleClick = (e) =>{
+     // console.log("hizo el doble Click");
+     alert(`Removiendo el evento tipo : ${e.type}`);
+     console.log(e);
+     $removedorEvento.removeEventListener("dblclick",removerDobleClick);
+     $removedorEvento.disabled = true;
+}
 
-/*
+$removedorEvento.addEventListener("dblclick",removerDobleClick)
+
+
 // *======= DOM 72: Manejadores de eventos ========
 
 function holaMundo () {
