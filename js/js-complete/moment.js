@@ -2,6 +2,27 @@
 
 
 /*
+// *======= DOM 75: STOP propagation & preventDefault=======
+const $divEventos = document.querySelectorAll(".eventos-flujo div"),
+$linkEnventos = document.querySelector(".eventos-flujo a");
+
+function flujoEventos(e){
+    console.log(`Hola te saluda ${this.className}, el click lo origino ${e.target.className}`);
+    e.stopPropagation();
+}
+
+console.log($divEventos);
+
+$divEventos.forEach(div =>{
+    div.addEventListener("click",flujoEventos);
+});
+
+$linkEnventos.addEventListener('click',(e) =>{
+    alert("Esto me va a asalir de alert supuestamente");
+    e.preventDefault();
+    e.stopPropagation();
+});
+
 // *========DOM 74: Flujo de Eventos (burbuja y Captura)=======
 const $divEventos = document.querySelectorAll(".eventos-flujo div");
 
