@@ -1,4 +1,40 @@
 
+
+/*
+// *======= BOM 77: Propiedades y Eventos ===========
+console.log(window.innerWidth);
+console.log(window.innerHeight);
+console.log(window.outerWidth);
+console.log(window.outerHeight);
+console.log(window.scrollX);
+console.log(window.scrollY);
+
+window.addEventListener("resize", function(){
+    console.error(`La cantidad ${window.scrollY}`);
+});
+
+window.addEventListener("scroll", e=>{
+    // console.clear();
+    console.log(window.scrollY);
+});
+
+// ?con el "load" de window espera que carguen, las imagenes, los estilos etc.
+window.addEventListener("load", e=>{
+    // console.clear();
+    console.info("evento Load");
+    console.log(window.scrollX);
+    console.log(window.scrollY);
+    console.log(e);
+})
+
+// ?con el DOMContentLoaded carga de inmediato, no revisa si han cargado el resto de elementos
+document.addEventListener("DOMContentLoaded", e =>{
+    console.log("DOM");
+    console.log(window.screenX);
+    console.log(window.screenY);
+    console.log(e);
+})
+
 // *======= DOM 76: Delegación de Eventos  =============
 
 function flujoEventos(e){
@@ -20,7 +56,6 @@ document.addEventListener("click", (e)=>{
     }
 });
 
-/*
 // *======= DOM 75: STOP propagation & preventDefault=======
 const $divEventos = document.querySelectorAll(".eventos-flujo div"),
 $linkEnventos = document.querySelector(".eventos-flujo a");
