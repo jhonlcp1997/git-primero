@@ -1,6 +1,53 @@
 
+// *====== BOM 79: Objetos: URL, Historial, y Navegador=======
+// OBJETO NAVEGADOR=====
+console.log(navigator);
+console.log(navigator.connection);
+console.log(navigator.geolocation);
+console.log(navigator.mediaDevices);
+console.log(navigator.mimeTypes);
+console.log(navigator.onLine);
+console.log(navigator.serviceWorker);
+console.log(navigator.storage);
+console.log(navigator.usb);
+console.log(navigator.userAgent);
+
+//  OBJETO LOCATION====
+// console.log(window.location);
+// console.log(location.origin);
+// console.log(location.protocol);
+// console.log(location.host);
+// console.log(location.hostname);
+// console.log(location.port);
+// console.log(location.href);
+// console.log(location.hash);
+// console.log(location.pathname);
+
+// OBJETO HISTORY=======
+// console.log(history);
+// console.log(history.length);
+// history: back(numero), forward(numero), go(numero positivo o negativo);
 
 /*
+// *======= BOM 78: Métodos =============
+const $btnAbrir = document.getElementById("abrir-ventana");
+const $btnCerrar = document.getElementById("cerrar-ventana");
+const $btnImprimir = document.getElementById("imprimir-ventana");
+
+let ventana;
+
+$btnAbrir.addEventListener("click", e =>{
+    ventana = window.open("https://jonmircha.com")
+});
+
+$btnCerrar.addEventListener("click", e =>{
+    // window.close();
+    ventana.close();
+});
+
+$btnImprimir.addEventListener("click", e =>{
+    window.print();
+});
 // *======= BOM 77: Propiedades y Eventos ===========
 console.log(window.innerWidth);
 console.log(window.innerHeight);
