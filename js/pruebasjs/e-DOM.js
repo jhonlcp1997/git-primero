@@ -1,49 +1,75 @@
-const $clock = document.querySelector(".clock");
 
-let iniciado= true;
+// *=== ejercicio del boton del scroll ====
+// const $btn = document.getElementById("btn");
 
-let hora = new Date();
-// $clock.insertAdjacentText("afterbegin", clock);
-let dato = hora.toLocaleString();
-// console.log(dato);
-// console.log(hora.toLocaleDateString())
-// // console.log(new Date("May 7,2022 03:04:20").getTime());
-const miliSeg_cumple = new Date("May 7,2022 00:00:00").getTime();
-// console.log(`faltan ${Math.floor((miliSeg_cumple- hora.getTime())/(1000*60*60*24))}`)
-// console.log(hora.getSeconds());
-// console.log(new Date().getHours())
+// $btn.style.color = "#fff";
+// console.log($btn.classList);
+
+// window.addEventListener("scroll", e =>{
+//     console.log(window.scrollY);
+//     let scroll_page = window.scrollY || document.documentElement.scrollTop;;
+//     if(scroll_page >= 800){
+//         $btn.classList.add("active");
+//     } else{
+//         $btn.classList.remove("active");
+//     }
+// })
+
+
+// $btn.addEventListener("click",()=>{
+//     window.scrollTo({
+//         behavior: "smooth",
+//         top: 0,
+//     })
+// })
+
+// *=== ejercicio del contador de mi cumpleaños XD=====
+// const $clock = document.querySelector(".clock");
+
+// let iniciado= true;
+
+// let hora = new Date();
+// // $clock.insertAdjacentText("afterbegin", clock);
+// let dato = hora.toLocaleString();
+// // console.log(dato);
+// // console.log(hora.toLocaleDateString())
+// // // console.log(new Date("May 7,2022 03:04:20").getTime());
+// const miliSeg_cumple = new Date("May 7,2022 00:00:00").getTime();
+// // console.log(`faltan ${Math.floor((miliSeg_cumple- hora.getTime())/(1000*60*60*24))}`)
+// // console.log(hora.getSeconds());
+// // console.log(new Date().getHours())
 
 
 
-// console.log(days);
-// console.log(hours);
-// console.log(minutesDeci);
+// // console.log(days);
+// // console.log(hours);
+// // console.log(minutesDeci);
 
-function reloj (iniciado){
+// function reloj (iniciado){
     
-    if(iniciado){
-        intervalo =setInterval(() => {
-            let now = new Date().getTime(),
-            limitTime = miliSeg_cumple - now,
-            days = Math.floor(limitTime/(1000*60*60*24)),
-            hoursDeci = limitTime % (1000*60*60*24)/(1000*60*60),
-            hours = ("0"+Math.floor(hoursDeci)).slice(-2),
-            minutesDeci = limitTime % (1000*60*60)/(1000*60);
-            minutes = ("0"+Math.floor(minutesDeci)).slice(-2),
-            seconds = ("0"+ Math.floor(limitTime % (1000*60)/(1000))).slice(-2);
-            hora = new Date();
-            let clock = (`dias ${days}, horas${hours}, minutos ${minutes}, segundos ${seconds}`);
-            // console.log(clock)
-            $clock.textContent= clock;
-        }, 1000);
-    } else{
-        console.log("entro al else");
-        clearInterval(intervalo);
-    }
-    console.log(iniciado);
-}
+//     if(iniciado){
+//         intervalo =setInterval(() => {
+//             let now = new Date().getTime(),
+//             limitTime = miliSeg_cumple - now,
+//             days = Math.floor(limitTime/(1000*60*60*24)),
+//             hoursDeci = limitTime % (1000*60*60*24)/(1000*60*60),
+//             hours = ("0"+Math.floor(hoursDeci)).slice(-2),
+//             minutesDeci = limitTime % (1000*60*60)/(1000*60);
+//             minutes = ("0"+Math.floor(minutesDeci)).slice(-2),
+//             seconds = ("0"+ Math.floor(limitTime % (1000*60)/(1000))).slice(-2);
+//             hora = new Date();
+//             let clock = (`dias ${days}, horas${hours}, minutos ${minutes}, segundos ${seconds}`);
+//             // console.log(clock)
+//             $clock.textContent= clock;
+//         }, 1000);
+//     } else{
+//         console.log("entro al else");
+//         clearInterval(intervalo);
+//     }
+//     console.log(iniciado);
+// }
 
-reloj(true);
+// reloj(true);
 
 
 // *==== Ejercicio del boton y el cuadro ====
