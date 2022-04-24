@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "LibreFranklin";
+    src: url('../fonts/LibreFranklin-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: "LibreFranklin-Italic";
+    src: url('../fonts/LibreFranklin-Italic-VariableFont_wght.ttf');
+}
+
+body{
+    font-family: "LibreFranklin";
+}
+
+h1{
+    font-style: normal;
+    font-weight: 900;
+}
