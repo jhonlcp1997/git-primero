@@ -1,126 +1,18 @@
-header {
-	background-color: orange;
-	position: fixed;
-	width: 100%;
-	top: 0;
+@font-face {
+  font-family: "LibreFranklin";
+  src: url("../../fonts/LibreFranklin-VariableFont_wght.ttf");
 }
 
-
-
-a {
-	text-decoration: none;
-	color: darkgreen;
+@font-face {
+  font-family: "LibreFranklin-Italic";
+  src: url("../fonts/LibreFranklin-Italic-VariableFont_wght.ttf");
 }
 
-article {
-	padding-top: 5rem;
-	margin: 0px 50px;
+.header {
+  width: 100%;
+  background-color: #8f3a99;
+  text-align: center;
+  color: #fff;
+  font-family: "LibreFranklin-Italic";
 }
-
-aside {
-	margin: 50px;
-}
-
-.nav_general {
-	/* position: relative; */
-	display: flex;
-	padding: 5px;
-	justify-content: space-between;
-	/* align-content: center; */
-	/* align-items: center; */
-}
-
-/* img, inicio, cuenta, seleccionar, Con CSS*/
-.header-lines {
-	
-	font-family: Georgia;
-	font-size: 10px;	
-	margin: 10px 10px 0 0;
-}
-
-.nav__li {
-	display: inline-block;
-	padding: 10px;
-	
-}
-.nav__li:hover > a {
-	color: #ccc;
-}
-
-.nav__li i {
-	font-size: 20px;
-}
-
-
-.indes {
-	position: relative;
-	font-size: 20px;
-	margin: 5px;
-}
-/*header en el centro*/
-
-
-/* Busqueda, configuracion, salir */
-
-
-
-
-
-
-.header-lines-img {
-	margin-left: 25px;
-	height: 60px;
-	border-radius: 80%;
-	border: 2px solid black;
-	cursor: pointer;	
-}
-
-.header-find {
-	display: inline;
-	position: relative;
-	top: -25px;
-	width: 200px;
-	height: 30px;
-	border-radius: 20px;
-	opacity: 0.7;
-}
-
-.header-find-c {
-	top: -25px;
-	display: inline-block;
-	position: relative;
-	margin: 0px 10px;
-	font-family: Impact;
-}
-
-.header-find-c:hover {
-	color: #ccc;
-}
-
-.header-find-c i {
-	font-size: 25px;
-}
-
-.header-find-c i:hover{
-	color: #ccc;
-}
-
-footer{
-	padding: 2.5rem;
-}
-
-
-/* media */
-@media (max-width: 1000px){
-	
-	
-
-	.nav__li{
-		display: none;
-	}
-
-	.header-find {
-		display: none;
-		
-	}
-}
+/*# sourceMappingURL=index.css.map */

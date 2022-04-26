@@ -11,7 +11,6 @@ if(typeof(Storage) !== 'undefined'){
     console.log("no es compatible")
 }
 
-
 $btn_dark.addEventListener("click", e=>{
     $body.classList.toggle("active");
     $btn_dark.classList.toggle("active");
