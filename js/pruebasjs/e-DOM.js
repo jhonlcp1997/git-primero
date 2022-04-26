@@ -1,6 +1,32 @@
+const $body = document.querySelector("body");
+const $btn_dark = document.querySelector(".btn");
+// const $btn_dark_icon = document.querySelector(".btn i");
+const $header = document.querySelector(".header");
+const $dark_mode = document.querySelectorAll("[dark-mode]");
+
+console.log($dark_mode);
+if(typeof(Storage) !== 'undefined'){
+    console.log(Storage);
+}else{
+    console.log("no es compatible")
+}
+
+
+$btn_dark.addEventListener("click", e=>{
+    $body.classList.toggle("active");
+    $btn_dark.classList.toggle("active");
+    $header.classList.toggle("active");
+    // $btn_dark.classList.toggle = ("active");
+
+
+    console.log("se presiono el btn");
+    
+})
+
 
 // *=== ejercicio del boton del scroll ====
 // const $btn = document.getElementById("btn");
+
 
 // $btn.style.color = "#fff";
 // console.log($btn.classList);

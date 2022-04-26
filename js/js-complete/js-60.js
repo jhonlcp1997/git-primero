@@ -1,3 +1,9 @@
+const $prueba_btn = document.querySelector(".prueba-btn");
+
+$prueba_btn.addEventListener("dblclick",()=>{
+    alert("diste doble click");
+})
+
 
 // *======== 68 DOM: Creando Elementos y Fragmentos=========
 
