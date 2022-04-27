@@ -15,4 +15,53 @@
   color: #fff;
   font-family: "LibreFranklin-Italic";
 }
+
+.carta {
+  border-radius: 15px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ecd674;
+  max-width: 60rem;
+  padding: 2rem 3rem;
+}
+
+.carta .article {
+  width: 75%;
+}
+
+.carta .article .article-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.carta .article .content {
+  padding-right: 4rem;
+}
+
+.carta .article .content .content-title {
+  font-size: 2rem;
+  text-decoration: underline;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.carta .article .content p {
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.carta .div-imagen {
+  width: 25%;
+  margin: auto;
+}
+
+.carta .div-imagen img {
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
 /*# sourceMappingURL=index.css.map */
