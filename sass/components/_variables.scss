@@ -11,3 +11,24 @@ $franklin1:"LibreFranklin";
 }
 
 $franklin1_i:"LibreFranklin-Italic";
+
+@font-face {
+    font-family: "Abel-Regular";
+    src: url('../../fonts/Abel-Regular.ttf');
+}
+
+$abel_regular: "Abel-Regular";
+
+@font-face {
+    font-family: "WaterBush-Regular";
+    src: url('../../fonts/Water_Brush/WaterBrush-Regular.ttf');
+}
+
+$water_bush: "WaterBush-Regular";
+
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url('../../fonts/Poppins/Poppins-Medium.ttf');
+}
+
+$poppins_m : "Poppins-Medium";

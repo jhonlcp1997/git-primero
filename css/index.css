@@ -8,12 +8,27 @@
   src: url("../fonts/LibreFranklin-Italic-VariableFont_wght.ttf");
 }
 
+@font-face {
+  font-family: "Abel-Regular";
+  src: url("../../fonts/Abel-Regular.ttf");
+}
+
+@font-face {
+  font-family: "WaterBush-Regular";
+  src: url("../../fonts/Water_Brush/WaterBrush-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../../fonts/Poppins/Poppins-Medium.ttf");
+}
+
 .header {
   width: 100%;
   background-color: #8f3a99;
   text-align: center;
   color: #fff;
-  font-family: "LibreFranklin-Italic";
+  font-family: "Poppins-Medium";
 }
 
 .carta {
