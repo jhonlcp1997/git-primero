@@ -5,12 +5,6 @@
 
 $franklin1:"LibreFranklin";
 
-@font-face {
-    font-family: "LibreFranklin-Italic";
-    src: url('../fonts/LibreFranklin-Italic-VariableFont_wght.ttf');
-}
-
-$franklin1_i:"LibreFranklin-Italic";
 
 @font-face {
     font-family: "Abel-Regular";
@@ -32,3 +26,10 @@ $water_bush: "WaterBush-Regular";
 }
 
 $poppins_m : "Poppins-Medium";
+
+@font-face {
+    font-family: "LibreFranklin-Italic";
+    src: url('../fonts/LibreFranklin-Italic-VariableFont_wght.ttf');
+}
+
+$franklin1_i:"LibreFranklin-Italic";
