@@ -4,11 +4,6 @@
 }
 
 @font-face {
-  font-family: "LibreFranklin-Italic";
-  src: url("../fonts/LibreFranklin-Italic-VariableFont_wght.ttf");
-}
-
-@font-face {
   font-family: "Abel-Regular";
   src: url("../../fonts/Abel-Regular.ttf");
 }
@@ -21,6 +16,11 @@
 @font-face {
   font-family: "Poppins-Medium";
   src: url("../../fonts/Poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "LibreFranklin-Italic";
+  src: url("../fonts/LibreFranklin-Italic-VariableFont_wght.ttf");
 }
 
 .header {
