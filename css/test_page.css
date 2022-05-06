@@ -260,6 +260,31 @@ a {
   font-size: 1rem;
 }
 
+@font-face {
+  font-family: "LibreFranklin";
+  src: url("../../fonts/LibreFranklin-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Abel-Regular";
+  src: url("../../fonts/Abel-Regular.ttf");
+}
+
+@font-face {
+  font-family: "WaterBush-Regular";
+  src: url("../../fonts/Water_Brush/WaterBrush-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins-Medium";
+  src: url("../../fonts/Poppins/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "LibreFranklin-Italic";
+  src: url("../fonts/LibreFranklin-Italic-VariableFont_wght.ttf");
+}
+
 .home {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
