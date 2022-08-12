@@ -16,6 +16,7 @@ Material UI > YT (ni comenzado)
 - Udemy (empezando)
     - Victor robles (Avanzar en la casa y en el trabajo)
     - Fernando Herrera(Avanzar en la casa)
+    - 
 - YT (empezando)
 - Documentación (empezando)
 
@@ -23,6 +24,7 @@ Material UI > YT (ni comenzado)
 - Udemy (todavia ni comienza)
     - Fernando Herrera (Avanzar en la casa)
 - YT (Todavia ni comenzado)
+    - Vida mmr
 
 
 # BACKEND
@@ -30,7 +32,8 @@ Material UI > YT (ni comenzado)
 **Esta parte se pude desarrollar con:**
 - Udemy (Empezando)
     - Angela (avanzar en la casa y en el trabajo)
-    - 
+    - Victor Robles
+    - Fernando Herrera (ni comenzado)
 - YT (empezado pero pausado)
-
-- Documentación (no encuentro algo que me llame la atencion)
+    - Leifer Mendez (terminado)
+- Documentación (Express y node js son muy buenos para esto)
