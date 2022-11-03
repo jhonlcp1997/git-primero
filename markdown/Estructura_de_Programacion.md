@@ -19,8 +19,8 @@
     - Fernando Herrera(Avanzar en la casa)
     - Juan Pablo de la Torre (Avanzar en casa por favor)
 - YT (empezando)
-    - Lucas Moy
-- Documentación (empezando)
+    - Lucas Moy(2/3)
+- Documentación (2/3)
 
 ## Estructura solo Angular
 - Udemy (Ni comenzado)
