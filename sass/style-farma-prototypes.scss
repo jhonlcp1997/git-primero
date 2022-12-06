@@ -1595,7 +1595,7 @@ $lobster: "Lobster", cursive;
 
       .nav-contain__two_three {
         display: inline;
-        width: 60%;
+        width: 70%;
         height: 90vh;
         min-height: 40rem;
         background-color: $white;
@@ -1639,6 +1639,7 @@ $lobster: "Lobster", cursive;
           padding: 1rem 0.5rem;
 
           .nav-three__chevron {
+            text-align: right;
             color: $green2;
             font-family: $poppins;
           }

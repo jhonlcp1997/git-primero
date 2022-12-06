@@ -1285,7 +1285,7 @@
   }
   .header-main .header-main__navbar .nav-contain__two_three {
     display: inline;
-    width: 60%;
+    width: 70%;
     height: 90vh;
     min-height: 40rem;
     background-color: #fff;
@@ -1325,6 +1325,7 @@
     padding: 1rem 0.5rem;
   }
   .header-main .header-main__navbar .nav-contain__two_three .nav-three .nav-three__chevron {
+    text-align: right;
     color: #62bb46;
     font-family: "Poppins", sans-serif;
   }
