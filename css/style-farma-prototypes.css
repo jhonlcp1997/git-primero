@@ -317,6 +317,123 @@
   display: none;
 }
 
+.popupPerfil {
+  position: absolute;
+  z-index: 1001;
+}
+.popupPerfil .popupPerfil__box {
+  display: flex;
+  position: fixed;
+  background-color: rgba(153, 153, 153, 0.5);
+  height: 100vh;
+  width: 100%;
+}
+.popupPerfil .popupPerfil__box .boxcontent {
+  width: 40%;
+  min-width: 16rem;
+  height: 7rem;
+  background-color: #007cc3;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  border-radius: 15px;
+}
+.popupPerfil .popupPerfil__box .boxcontent button {
+  background-color: #fff;
+  width: 100%;
+  font-size: 1.2rem;
+  font-family: "Abel", sans-serif;
+  padding: 0.3rem 0;
+  color: #007cc3;
+}
+
+.carMarket {
+  position: fixed;
+  z-index: 100;
+  max-width: 22rem;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  right: 0;
+  box-shadow: 0 0.1rem 10px rgba(51, 46, 46, 0.466);
+}
+.carMarket .carMarket__box {
+  width: 100%;
+  background-color: #fff;
+  display: block;
+}
+.carMarket .carMarket__box .carMarket__box__buttons {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.carMarket .carMarket__box .carMarket__box__buttons .btnClose,
+.carMarket .carMarket__box .carMarket__box__buttons .btnBuyCar {
+  padding: 0.5rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.carMarket .carMarket__box .carMarket__box__buttons .btnClose {
+  background-color: rgb(253, 167, 6);
+  color: #fff;
+}
+.carMarket .carMarket__box .carMarket__box__buttons .btnClose:hover {
+  background-color: rgb(177, 131, 47);
+}
+.carMarket .carMarket__box .carMarket__box__buttons .btnBuyCar {
+  color: #fff;
+  background-color: #007cc3;
+}
+.carMarket .carMarket__box .carMarket__box__buttons .btnBuyCar:hover {
+  background-color: #389eda;
+}
+.carMarket .carMarket__box .listProductsInCar {
+  list-style: none;
+  margin: 0 1rem;
+}
+.carMarket .carMarket__box .listProductsInCar .liProduct {
+  margin: 0.8rem 0;
+}
+.carMarket .carMarket__box .listProductsInCar .liProduct h1 {
+  font-family: "Abel", sans-serif;
+  font-size: 1.8rem;
+}
+.carMarket .carMarket__box .listProductsInCar .liProduct .liProduct__box {
+  display: flex;
+}
+.carMarket .carMarket__box .listProductsInCar .liProduct .liProduct__box img {
+  width: 8rem;
+  padding: 0.5rem 0.8rem;
+}
+.carMarket .carMarket__box .listProductsInCar .liProduct .liProduct__box .inCar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.carMarket .carMarket__box .listProductsInCar .liProduct .liProduct__box .inCar span {
+  width: 100%;
+  display: block;
+  font-family: "Poppins", sans-serif;
+}
+.carMarket .carMarket__box .listProductsInCar .liProduct hr {
+  background-color: #007cc3;
+  height: 1px;
+  margin-bottom: 0.5rem;
+}
+.carMarket .carMarket__box .listProductsInCar .liProduct .btnDelete {
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.carMarket .carMarket__box .total {
+  font-size: 2rem;
+  font-family: "Poppins", sans-serif;
+  padding: 0.2rem 1rem;
+}
+
 .main {
   width: 100%;
   position: relative;

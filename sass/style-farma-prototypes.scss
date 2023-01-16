@@ -24,6 +24,9 @@ $pink1: #f4c6de;
 $pink2: #f5a4c7;
 $pink3: #f173ac;
 $red: #e60000;
+$red2: #e04343;
+$orange: rgb(253, 167, 6);
+$orange2: rgb(177, 131, 47);
 $border: 0.2rem solid $green2;
 $border2: 0.1rem solid $green2;
 $boxShadow1: -3rem 0 80px -70px rgb(51, 46, 46);
@@ -404,6 +407,148 @@ $lobster: "Lobster", cursive;
     .nav-contain__two_three,
     .nav-four {
       display: none;
+    }
+  }
+}
+
+.popupPerfil {
+  // display: none;
+  position: absolute;
+  z-index: 1001;
+
+  .popupPerfil__box {
+    display: flex;
+    position: fixed;
+    background-color: rgba(153, 153, 153, 0.5);
+    height: 100vh;
+    width: 100%;
+
+    .boxcontent {
+      width: 40%;
+      min-width: 16rem;
+      height: 7rem;
+      background-color: #007cc3;
+      margin-left: auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-between;
+      border-radius: 15px;
+
+      button {
+        // border-radius: 15px;
+        background-color: $white;
+        width: 100%;
+        font-size: 1.2rem;
+        font-family: $abel;
+        padding: 0.3rem 0;
+        color: #007cc3;
+      }
+    }
+  }
+}
+
+.carMarket {
+  // display: none;
+  // display: block;
+  position: fixed;
+  z-index: 100;
+  max-width: 22rem;
+  height: 100vh;
+  width: 100%;
+  background-color: $white;
+  right: 0;
+  // justify-content: right;
+  box-shadow: $boxShadow2;
+
+  .carMarket__box {
+    width: 100%;
+    background-color: $white;
+    display: block;
+
+    .carMarket__box__buttons {
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+
+      .btnClose,
+      .btnBuyCar {
+        padding: 0.5rem;
+        font-family: $poppins;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      .btnClose {
+        background-color: $orange;
+        color: $white;
+
+        &:hover {
+          background-color: $orange2;
+        }
+      }
+
+      .btnBuyCar {
+        color: $white;
+        background-color: $blue-main;
+
+        &:hover{
+          background-color: $blue-2;
+        }
+      }
+    }
+
+    .listProductsInCar{
+      list-style: none;
+      margin: 0 1rem;
+
+      .liProduct{
+        margin: .8rem 0;
+
+        h1{
+          font-family: $abel;
+          font-size: 1.8rem;
+        }
+
+        .liProduct__box{
+          display: flex;
+
+          img {
+            width: 8rem;
+            padding: .5rem .8rem;
+          }
+
+          .inCar {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            span{
+              width: 100%;
+              display: block;
+              font-family: $poppins;
+            }
+          }
+        }
+
+        hr{
+          background-color: #007cc3;
+          height: 1px;
+          margin-bottom: .5rem;
+        }
+
+        .btnDelete {
+          font-family: $poppins;
+          padding: .5rem;
+          border-radius: 5px;
+        }
+      }
+    }
+
+    .total{
+      font-size: 2rem;
+      font-family: $poppins;
+      padding: .2rem 1rem;
     }
   }
 }
@@ -842,7 +987,7 @@ $lobster: "Lobster", cursive;
         border-bottom: $border;
         overflow: hidden;
 
-        &.one{
+        &.one {
           height: 30rem;
         }
 
@@ -1660,11 +1805,11 @@ $lobster: "Lobster", cursive;
     }
   }
 
-  .blogs{
+  .blogs {
     .box-container {
       .box {
         .image {
-          &.one{
+          &.one {
             height: 20rem;
           }
         }

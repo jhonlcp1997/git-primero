@@ -30,7 +30,7 @@
 ## **Mejoramiento FrontEnd**
 ## Astro
 - Youtube
-    - 
+    - Fazt
 - Documentacion
 
 ## Qwick
