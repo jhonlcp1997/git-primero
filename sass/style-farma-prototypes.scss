@@ -412,7 +412,7 @@ $lobster: "Lobster", cursive;
 }
 
 .popupPerfil {
-  // display: none;
+  display: none;
   position: absolute;
   z-index: 1001;
 
@@ -541,6 +541,12 @@ $lobster: "Lobster", cursive;
           font-family: $poppins;
           padding: .5rem;
           border-radius: 5px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: $black2;
+            color: $white;
+          }
         }
       }
     }
@@ -1589,6 +1595,140 @@ $lobster: "Lobster", cursive;
 }
 
 // *EVENTOS=====================
+
+// *PERFIL =====================
+.cardProfile {
+  width: 100%;
+
+  .cardProfile__title {
+    text-align: center;
+    font-family: $poppins;
+    border-bottom: 1px solid $black;
+    margin: auto;
+    width: 95%;
+    max-width: 60rem;
+  }
+
+  .cardProfile__one {
+    margin: auto;
+    width: 95%;
+    max-width: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #eee;
+    font-family: $poppins;
+
+    .imgContent {
+      flex: 1 2 20rem;
+      display: flex;
+      padding: 2rem;
+      
+      .imgProfile {
+        margin: auto;
+        width: 18rem;
+      }
+    }
+
+    .userContent {
+      flex: 1 1 20rem;
+      // background-color: #009f46;
+      padding: 2rem;
+
+      label{
+        display: block;
+        border-bottom: 1px solid $blue-main;
+      }
+
+      input{
+        width: 100%;
+        font-family: $poppins;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  .cardProfile__two {
+    margin: auto;
+    margin-top: 2rem;
+    width: 95%;
+    max-width: 60rem;
+    background-color: #eee;
+    padding: 2rem;
+
+    .title {
+      font-family: $abel;
+      text-align: center;
+    }
+    
+    .box__one {
+      display: flex;
+      justify-content: space-around;
+      border-radius: 15px;
+      background-color: $white;
+      font-family: $poppins;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    .box__two {
+      background-color: $white;
+      border-radius: 15px;
+      padding: 1rem;
+      font-family: $poppins;
+
+      .subText{
+        font-size: 1.1rem;
+      }
+
+      .table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th, td {
+          border: 1px solid #aaa;
+
+          
+        }
+
+        tr{
+          &:hover{
+            background-color: #eee;
+          }
+        }
+
+        td{
+          text-align: center;
+          &:nth-child(2){
+            text-align: right;
+          }
+        }
+      }
+    }
+
+    .box__three {
+      margin-top: 2rem;
+
+      .terms {
+        font-family: $abel;
+      }
+
+      label {
+        display: block;
+        margin: .5rem 0;
+        font-family: $poppins;
+
+        input {
+          width: 3rem;
+          height: 1.5rem;
+          float: left;
+        }
+      }
+    }
+
+  }
+}
+
+// *PERFIL =====================
 
 .footer {
   margin-top: 4rem;

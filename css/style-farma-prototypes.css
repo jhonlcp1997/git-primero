@@ -318,6 +318,7 @@
 }
 
 .popupPerfil {
+  display: none;
   position: absolute;
   z-index: 1001;
 }
@@ -427,6 +428,11 @@
   font-family: "Poppins", sans-serif;
   padding: 0.5rem;
   border-radius: 5px;
+  cursor: pointer;
+}
+.carMarket .carMarket__box .listProductsInCar .liProduct .btnDelete:hover {
+  background-color: #666;
+  color: #fff;
 }
 .carMarket .carMarket__box .total {
   font-size: 2rem;
@@ -1287,6 +1293,111 @@
 }
 .events .events__box .events__box__list .event .event__box-two .title {
   font-family: "Abel", sans-serif;
+}
+
+.cardProfile {
+  width: 100%;
+}
+.cardProfile .cardProfile__title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  border-bottom: 1px solid #000;
+  margin: auto;
+  width: 95%;
+  max-width: 60rem;
+}
+.cardProfile .cardProfile__one {
+  margin: auto;
+  width: 95%;
+  max-width: 60rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #eee;
+  font-family: "Poppins", sans-serif;
+}
+.cardProfile .cardProfile__one .imgContent {
+  flex: 1 2 20rem;
+  display: flex;
+  padding: 2rem;
+}
+.cardProfile .cardProfile__one .imgContent .imgProfile {
+  margin: auto;
+  width: 18rem;
+}
+.cardProfile .cardProfile__one .userContent {
+  flex: 1 1 20rem;
+  padding: 2rem;
+}
+.cardProfile .cardProfile__one .userContent label {
+  display: block;
+  border-bottom: 1px solid #007cc3;
+}
+.cardProfile .cardProfile__one .userContent input {
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1rem;
+}
+.cardProfile .cardProfile__two {
+  margin: auto;
+  margin-top: 2rem;
+  width: 95%;
+  max-width: 60rem;
+  background-color: #eee;
+  padding: 2rem;
+}
+.cardProfile .cardProfile__two .title {
+  font-family: "Abel", sans-serif;
+  text-align: center;
+}
+.cardProfile .cardProfile__two .box__one {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 15px;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+.cardProfile .cardProfile__two .box__two {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 1rem;
+  font-family: "Poppins", sans-serif;
+}
+.cardProfile .cardProfile__two .box__two .subText {
+  font-size: 1.1rem;
+}
+.cardProfile .cardProfile__two .box__two .table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.cardProfile .cardProfile__two .box__two .table th, .cardProfile .cardProfile__two .box__two .table td {
+  border: 1px solid #aaa;
+}
+.cardProfile .cardProfile__two .box__two .table tr:hover {
+  background-color: #eee;
+}
+.cardProfile .cardProfile__two .box__two .table td {
+  text-align: center;
+}
+.cardProfile .cardProfile__two .box__two .table td:nth-child(2) {
+  text-align: right;
+}
+.cardProfile .cardProfile__two .box__three {
+  margin-top: 2rem;
+}
+.cardProfile .cardProfile__two .box__three .terms {
+  font-family: "Abel", sans-serif;
+}
+.cardProfile .cardProfile__two .box__three label {
+  display: block;
+  margin: 0.5rem 0;
+  font-family: "Poppins", sans-serif;
+}
+.cardProfile .cardProfile__two .box__three label input {
+  width: 3rem;
+  height: 1.5rem;
+  float: left;
 }
 
 .footer {
