@@ -1297,6 +1297,7 @@
 
 .cardProfile {
   width: 100%;
+  margin-top: 2rem;
 }
 .cardProfile .cardProfile__title {
   text-align: center;
@@ -1367,20 +1368,40 @@
 .cardProfile .cardProfile__two .box__two .subText {
   font-size: 1.1rem;
 }
-.cardProfile .cardProfile__two .box__two .table {
+.cardProfile .cardProfile__two .box__two .boxContent {
+  overflow: auto;
+  max-height: 10rem;
+}
+.cardProfile .cardProfile__two .box__two .boxContent .table {
   width: 100%;
+  min-width: 30rem;
+  display: table;
+  overflow-x: auto;
+  position: relative;
   border-collapse: collapse;
 }
-.cardProfile .cardProfile__two .box__two .table th, .cardProfile .cardProfile__two .box__two .table td {
-  border: 1px solid #aaa;
+.cardProfile .cardProfile__two .box__two .boxContent .table thead {
+  position: -webkit-sticky; /* Safari... */
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #fff;
 }
-.cardProfile .cardProfile__two .box__two .table tr:hover {
+.cardProfile .cardProfile__two .box__two .boxContent .table td {
+  border: 1px solid #aaa;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.cardProfile .cardProfile__two .box__two .boxContent .table tr {
+  border-spacing: 0;
+}
+.cardProfile .cardProfile__two .box__two .boxContent .table tr:hover {
   background-color: #eee;
 }
-.cardProfile .cardProfile__two .box__two .table td {
+.cardProfile .cardProfile__two .box__two .boxContent .table td {
   text-align: center;
 }
-.cardProfile .cardProfile__two .box__two .table td:nth-child(2) {
+.cardProfile .cardProfile__two .box__two .boxContent .table td:nth-child(2) {
   text-align: right;
 }
 .cardProfile .cardProfile__two .box__three {
