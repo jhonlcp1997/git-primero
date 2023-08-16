@@ -6,7 +6,7 @@
 ## Estructura UI
 - Bootstrap > UDEMY, YT (casi terminado)
 - Material UI > YT (ni comenzado)
-- Tailwind > YT (ni comenzado)
+- Tailwind > YT (Terminado)
 
 ## Estructura solo js
 **Esta parte solo se desarrollará con el curso de:**
@@ -16,8 +16,8 @@
 **Esta parte se puede desarrollar con:**
 - Udemy (empezando)
     - Victor robles (Avanzar en la casa y en el trabajo)
-    - Fernando Herrera(Avanzar en la casa)
-    - Juan Pablo de la Torre (Avanzar en casa por favor)
+    - Fernando Herrera(Terminado)
+    - Juan Pablo de la Torre (Comenzando)
 - YT (empezando)
     - Lucas Moy(2/3)
 - Documentación (2/3)
@@ -25,17 +25,18 @@
 ## Estructura solo Angular
 - Udemy (Ni comenzado)
     - Universidad Angular
-    - Fernando Herrera
+    - Fernando Herrera (comenzando)
 
 ## **Mejoramiento FrontEnd**
 ## Astro
 - Youtube
-    - Fazt
+    - Fazt (Terminado)
 - Documentacion
+    - (Terminado)
 
 ## Qwick
 - Youtube
-    - 
+    - (compenzando)
 - Documentacion
 
 # FRONTEND-BACKEND 
@@ -74,10 +75,10 @@
 ## Estructura solo Node, Express y Nest js
 **Esta parte se pude desarrollar con:**
 - Udemy (Empezando)
-    - Angela (avanzar en la casa y en el trabajo)
-    - Victor Robles
-    - Fernando Herrera (ni comenzado)
-- YT (empezado pero pausado)
+    - Angela (Termninado)
+    - Victor Robles (Terminado)
+    - Fernando Herrera (Terminado menos Nest)
+- YT (Mitad)
     - Leifer Mendez (terminado)
 - Documentación (Express y node js son muy buenos para esto)
 
